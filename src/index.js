@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+
+import { Button } from 'antd-mobile';
+
+//  样式全导入
+import 'antd-mobile/dist/antd-mobile.css';
+
+//  1.进行自动按需加载、引入样式，安装插件完成，具体查看官方文档
+//  npm install babel-plugin-import --save
+//  2.配置
+//  npm run eject 敲入命令获取所有的配置
+
+
+//  安装antd-mobile
+//  npm install antd-mobile --save
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Button>Start</Button>,
   document.getElementById('root')
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
