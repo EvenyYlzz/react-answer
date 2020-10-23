@@ -20,12 +20,11 @@ function mapDispatchToProps(dispatch){
 class Counter extends React.Component{
     
     render(){
-        
         return (
             <div>
-                <Button onClick={this.goDatiPage}>随机答题</Button>
-                <Button onClick={this.props.onAddClick5}>闯关答题</Button>
-                <Button onClick={this.props.onAddClick5}>抽奖答题</Button>
+                <h1>恭喜您获得{this.props.location.state.score}分</h1>
+                <Button onClick={this.goDatiPage}>回到首页</Button>
+                
             </div>
         )
 
@@ -33,7 +32,7 @@ class Counter extends React.Component{
     }
     goDatiPage=()=>{
         //console.log(this.props)
-        this.props.history.push("/dati")
+        this.props.history.push("/")
     }
 }
 

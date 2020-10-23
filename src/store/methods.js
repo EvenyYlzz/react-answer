@@ -1,12 +1,20 @@
+
 let methods = {
-    add(state,action) {
+    add:function(state,action){
         state.num++
         return state
     },
-    addNum(state,action) {
-        state.num = state.num + action.num
+    addNum:function(state,action){
+        
+        state.num = state.num + action.num;
         return state
     },
+    setTimu:function(state,action){
+        state.timuList = action.content;
+        return state;
+    }
 }
+
+
 
 export default methods

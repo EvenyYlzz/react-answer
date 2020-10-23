@@ -1,5 +1,6 @@
 let state = {
-    num:0
+    timuList:[],
 }
 
-export default state
+
+export default state 

@@ -1,21 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux'
-import {BrowserRouter as Router,Route} from 'react-router-dom'
+import {BrowserRouter as Router,Route} from 'react-router-dom';
 import store from './store/data'
 import App from './views/App'
+
 import './assets/css/style.css'
-// import axios from 'axios'
 
-
+import Dati from './views/Dati'
+import Result from './views/Result'
 ReactDOM.render(
-  <Provider store={store}>
-    <Router>
-      <Route path='/' component={App}>
-      </Route>
-    </Router>
-  </Provider>,
-  document.getElementById('root')
+    <Provider store={store}>
+        <Router>
+            <Route path="/" exact component={App}></Route>
+            <Route path="/dati" component={Dati}></Route>
+            <Route path="/result" component={Result}></Route>
+        </Router>
+    </Provider>,
+    document.querySelector("#root")
 )
 
 
