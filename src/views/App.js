@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux'
 import {Button} from 'antd-mobile'
+import '../assets/css/style.css'
 
 //将state映射到props函数
 function mapStateToProps(state){
@@ -12,8 +13,6 @@ function mapStateToProps(state){
 function mapDispatchToProps(dispatch){
     return {
         onAddClick:()=>{dispatch({type:'add'})},
-        
-            
     }
 }
 
@@ -22,10 +21,16 @@ class Counter extends React.Component{
     render(){
         
         return (
-            <div>
-                <Button onClick={this.goDatiPage}>随机答题</Button>
-                <Button onClick={this.props.onAddClick5}>闯关答题</Button>
-                <Button onClick={this.props.onAddClick5}>抽奖答题</Button>
+            <div className="indexApp">
+                <div className="btn">
+                    <Button onClick={this.goDatiPage}>随机答题</Button>
+                </div>
+                <div className="btn">
+                    <Button onClick={this.props.onAddClick5}>闯关答题</Button>
+                </div>
+                <div className="btn">
+                    <Button onClick={this.props.onAddClick5}>抽奖答题</Button>
+                </div>
             </div>
         )
 

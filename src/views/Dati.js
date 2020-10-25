@@ -48,7 +48,7 @@ class DatiCom extends React.Component{
         
         //如果数据没有加载进来，就设置为loading
         if(timuArr.length>0){
-            let options = JSON.parse(timuArr[currentNum].options) 
+            let options = JSON.parse(timuArr[currentNum].options)
             return (
                 <div className="datiPage">
                     <h2>

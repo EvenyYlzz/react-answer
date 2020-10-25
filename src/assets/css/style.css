@@ -1,6 +1,20 @@
 /* .datiPage{
 
 } */
+.indexApp{
+    position: relative;
+    top: 200px;
+}
+
+.btn{
+    margin-bottom: 50px;
+}
+
+.datiPage{
+    position: relative;
+    top: 80px;
+}
+
 .datiPage h2{
     width: 90%;
     margin: 10px auto;
@@ -37,3 +51,11 @@
     color: #fff;
 }
 
+.Result{
+    position: relative;
+    top: 200px;
+}
+
+.resh1{
+    text-align: center;
+}
